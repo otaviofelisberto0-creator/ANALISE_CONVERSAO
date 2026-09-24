@@ -1,20 +1,14 @@
-# Dashboard de Conversão
+# Dashboard de Conversão - pacote GitHub Pages
 
-## Publicação no GitHub Pages
+## Conteúdo
+- `index.html`: dashboard e conversores CSV para JSON.
+- `dados/.gitkeep`: mantém a pasta de dados no repositório.
 
-1. Crie ou abra um repositório no GitHub.
-2. Envie o arquivo `index.html` para a raiz do repositório.
-3. Em **Settings > Pages**, escolha a branch de publicação e a pasta raiz.
-4. Aguarde a publicação indicada pelo próprio GitHub.
+## Fluxo de atualização
+1. Abra o dashboard publicado.
+2. Selecione o CSV ND ou BL. Os arquivos são independentes.
+3. Clique em **Converter CSV ... para JSON**.
+4. Clique em **Baixar JSON ...**.
+5. No GitHub, abra a pasta `dados` e envie o JSON baixado.
 
-## Uso
-
-- Abra a página **Upload**.
-- Selecione os CSVs ND e BL.
-- Use os botões para converter e baixar os JSONs.
-- O nome usa a maior data encontrada na coluna `DT`, no padrão `ND-DD-MM.json` ou `BL-DD-MM.json`.
-- Se não houver uma data válida na coluna `DT`, será usada a data local do navegador.
-
-## Observação
-
-A conversão CSV para JSON acontece no navegador. O botão GitHub apenas abre o site oficial e não publica arquivos automaticamente.
+O nome do arquivo usa a maior data válida da coluna `DT`, no padrão `ND-DD-MM.json` ou `BL-DD-MM.json`.
